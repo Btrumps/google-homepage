@@ -1,0 +1,1 @@
+This is a project that practices HTML/CSS fundamentals by trying to re-create the Google Homepage.
