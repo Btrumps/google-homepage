@@ -1,10 +1,63 @@
 <!DOCTYPE html>
 
 <style>
+#navbar {
+    position: fixed;
+    top:20px;
+    left:20px;
+}
+
+.links {
+    padding: 10px;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+    opacity: 0.75;
+    text-decoration: none;
+    color: #000;
+}
+
 #logo {
     display:block;
     margin:auto;
     padding: 100px;
+}
+
+#search {
+    display: block;
+    margin: 0px auto;
+    height: 28px;
+    min-width: 364px;
+    width: 500px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+
+    text-indent: 5px;
+    border-radius: 15px;
+}
+
+.button {
+    display: inline-block;
+    margin: 5px;
+    padding: 0px 15px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    height: 36px;
+    min-width: 54px;
+
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+}
+
+#button-group {
+    display: block;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
 }
 
 </style>
@@ -16,7 +69,21 @@
     </header>
     
     <body>
-        <img alt="Google Logo" id="logo"  src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-    
+
+        <div id="navbar">
+            <a class="links" href="#">About</a>
+            <a class="links" href="#">Store</a>
+        </div>
+        <img id="logo" alt="Google Logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        <div>
+            <form>
+                <input id="search" type="text" maxlength="1000">
+            </form>
+        </div>
+        <div id="button-group">
+            <input class="button" type="submit" value="Google Search" aria-label="Google Search">
+            <input class="button" type="submit" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky">
+        </div>
+        
     </body>
 </html>
